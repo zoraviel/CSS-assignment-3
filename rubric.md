@@ -45,6 +45,7 @@ All of the above. Plus:
     * The two columns become one column BEFORE the two columns look too skinny and weird.
     * The image disappears.
     * There are no margins, and padding is not excessively large.
+    * There is no skinny stripe of another color at the top or bottom, or in between the elements.
 
 4. When I use the Chrome Developer Tools, as specified in the assignment, your *index.html* at github.io looks like the animated GIF included in the assignment in terms of background colors, edges, and spacing. (Your fonts will be different.)
 
