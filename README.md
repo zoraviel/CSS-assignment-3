@@ -48,9 +48,9 @@ You must NOT change the page layout EXCEPT within an @media query.
 
 ## Instructions
 
-Remember to work only inside your *gh-pages* branch. You will edit the existing files *index.html* and *main.css*.
+Remember to work only inside your *gh-pages* branch. You will edit the existing files *index.html* and *main.css*. Only those. Nothing else.
 
-### Google fonts
+### Part 1: Google fonts
 
 Before you begin, be sure to read Robbins chapter 12 and watch the [Google Fonts video](https://www.youtube.com/watch?v=1S3ga5Or5ec&index=35&list=PLZFU-W6LLeecJuSQh20QUU_gCmS30sLTB). Also read all the text on the HTML page that's in this assignment.
 
@@ -58,21 +58,21 @@ You need to understand all the requirements of a **font stack** to do this assig
 
 **VERY IMPORTANT REQUIREMENT:** DO NOT use any Google font that is used in the [Google Fonts video](https://www.youtube.com/watch?v=1S3ga5Or5ec&index=35&list=PLZFU-W6LLeecJuSQh20QUU_gCmS30sLTB). Four Google fonts are used in the video. There will be a high penalty for using even one of those four fonts.
 
-1. Following the procedures shown in the video, choose two Google font families: one is for all the headings on the page, and the other is for everything else. Make sure they look good together. Make sure the one used in paragraphs has good *readability* at that size.
+1. Following the procedures shown in the video, choose two Google font families: one is for all the headings on the page, and the other is for everything else. Make sure they look good together but are not too similar to each other. Make sure the one used in paragraphs has good *readability* at that size. Either your headings are all serif fonts, and everything else is sans-serif, *or the opposite.* PAY ATTENTION to serif and sans-serif, and NEVER mix them together in a single CSS declaration.
 
-2. Add the appropriate element to the HTML HEAD element for your Google fonts.
+2. Add the appropriate element to the HTML `<head>` element for your Google fonts.
 
 3. **Edit the two existing font-family declarations** in the CSS file to include your Google fonts.
 
-4. Add *at least one* other common font family to each of those declarations, and make sure it is a suitable companion to the Google font you have named. Note that **you might need to add two,** because a common font on Windows is not always a common font on Mac, and vice versa. You will have to look up *common font families* -- don't just guess.
+4. Add *at least one* other common font family to each of those declarations, and make sure it is a suitable companion to the Google font you have named. Note that **you might need to add two,** because a common font on Windows is not always a common font on Mac, and vice versa. You will have to LOOK UP *common font families* — don't just guess. I'm taking off points if you make bad choices.
 
-5. Add the correct *generic* at the end of each declaration. Note: One must be serif, and one must be sans-serif. Make sure you are choosing the best one to match the fonts preceding it in the declaration. Generics are covered in your book and in the chapter 12, part 1 video.
+5. Add the correct *generic* at the END of each declaration. Note: One must be serif, and one must be sans-serif. We NEVER use cursive or fantasy. Make sure you are choosing the best one to match the fonts preceding it in the declaration. Generics are covered in your book (page 229) and in the chapter 12, part 1 video.
 
-**Test your page** for all the font options by deleting, saving and reloading -- as many times as needed.
+**Test your page** for all the font options by deleting, saving and reloading — as many times as needed.
 
 **TIP:** When you're selecting a font for the operating system you don't have, you can look it up on Wikipedia to see an image of how it looks. Not on Wikipedia? Then is it really a *common* font?
 
-### Responsive design
+### Part 2: Responsive design
 
 There are two ways to design a page initially. One is to design it for a wide screen, a desktop monitor, and then use @media queries to adapt it to mobile. The other way is to design for mobile first, and then use @media queries to adapt it to wider screens.
 
@@ -80,28 +80,28 @@ This CSS file takes the first approach, even though "mobile first" is the prefer
 
 The [video for chapter 18](https://www.youtube.com/watch?v=DYrpZRaX8RI&index=37&list=PLZFU-W6LLeecJuSQh20QUU_gCmS30sLTB) is strongly recommended.
 
-1. There is an element you must add to the HEAD in the HTML file to make the page responsive. It doesn't do *everything* that's needed, but it plays an important part. It's in chapter 18 and in the video.
+1. There is an element you must add to the `<head>` in the HTML file to make the page responsive. It doesn't do *everything* that's needed, but it plays an important part. It's in chapter 18 and in the video.
 
-2. Write an @media query with one *breakpoint* (see Robbins chapter 18). The breakpoint will indicate the width at which the page changes from two columns to one.
+2. Write an @media query with one *breakpoint* (see Robbins chapter 18 and the video). The breakpoint will indicate the width at which the page changes from two columns to one. Choosing a good number for this breakpoint is part of your assignment.
 
-3. In that @media query, specify any changes that are needed to make the page look like the animated image below on a phone (your fonts will be different). Changes must be made to margins and widths of several selectors. Also, because the chart at the top of the page becomes unreadable at a small size, you must hide it. **Hint:** Use the *display* property to hide something.
+3. In that @media query, specify any changes that are needed to make the page look like the animated image below on a phone (your fonts will be different). Changes must be made to margins and widths of several selectors.
+
+4. Also, because the chart at the top of the page becomes unreadable at a small size, you must hide it. **Hint:** Use the *display* property to hide something.
 
 ![Animated GIF - phone preview - after responsive styles were added](video/phone.gif)
 
 (Yes, I made a video of my phone and then converted it to an animated GIF.)
 
-**Note:** In the CSS file, you must not *change* anything (except the two font-family declarations you already changed). You will *add* the @media query, and all adaptations will be handled there. (Best practice: Add @media queries at the bottom of the CSS file.)
+**Note:** In the CSS file, you must not *change* anything (except the two font-family declarations you already changed). You will *add* the @media query at the BOTTOM, and all adaptations will be handled there. (**Best practice:** Add @media queries at the bottom of the CSS file.)
 
-Test your changes by making your browser window very narrow.
-
-In Chrome, you can test your page for different device sizes using the Developer Tools (View menu > Developer > Developer Tools).
+In Chrome, you can test your page for different device sizes using the Developer Tools (View menu > Developer > Developer Tools). **YOU ARE supposed to use CHROME.**
 
 ![Chrome Developer Tools - mobile testing](images/new-dev-tools-mobile.png)
 
-## Commit and sync
+## Commit and publish/push
 
-When everything is finished, save both files, commit and sync (or publish) to GitHub. Be sure to stay in your *gh-pages* branch for all steps. DO NOT forget to Publish/Sync your repo!
+When everything is finished, save both files, commit and publish (or push) to GitHub. Be sure to stay in your *gh-pages* branch for all steps. DO NOT forget to publish/push your repo after you have carefully checked your work!
 
 ## Check the rubric and submit in Canvas
 
-Be sure to [check the rubric](rubric.md) and **SUBMIT THE URL of your GitHub repo** in Canvas to complete this assignment!
+Be sure to [check the rubric](rubric.md) and **SUBMIT THE URL of your GitHub repo** in Canvas to complete this assignment.
