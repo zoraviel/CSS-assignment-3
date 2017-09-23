@@ -1,113 +1,118 @@
 * {
-    -webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-			box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background: #b3dbe8;
-    color: #000;
-    font-family: sans-serif; /*   add fonts here   */
-    font-size: 100%; /* DO NOT change */
-    margin: 0; /* DO NOT change */
+  background: #b3dbe8;
+  color: #000;
+  font-family: sans-serif; /*   add fonts   */
 }
 
-/*  #container div (below) wraps all content below the image
+
+/*  #container div (below) wraps all content _below_ the image
     2% - top and bottom margins
     auto - left and right margins
     auto centers a block element regardless of width of device
-    when using auto, combine it with max-width
+    max-width is nice for super-wide desktop screens
     */
+
 #container {
-    max-width: 1280px;
-    margin: 2% auto;
+  max-width: 1280px;
+  margin: 2% auto;
 }
 
 article {
-    width: 55%;
-    float: left;
-    padding: 2em;
-    background: #eaeaea;
+  width: 55%;
+  float: left;
+  padding: 2em;
+  background: #eaeaea;
 }
 
 aside {
-    width: 43%;
-    margin-left: 2%;
-    float: left;
-    padding: 2em;
-    background: #0287b3;
-    color: #eaeaea;
+  width: 43%;
+  margin-left: 2%;
+  float: left;
+  padding: 2em;
+  background: #0287b3;
+  color: #eaeaea;
 }
 
 #sidebar2 {
-    background: #006080;
-    margin-top: 2%;
+  background: #006080;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
+
 
 /* headings and text */
 
 h1, h2 {
-    margin: 0;
-    font-family: serif;  /*   add fonts here   */
+  margin: 0;
+  font-family: serif; /*   add fonts   */
 }
 
 article h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 aside h2 {
-    font-size: 2em;
-    font-weight: normal;
+  font-size: 2em;
+  font-weight: normal;
 }
 
 p {
-    line-height: 140%;
+  line-height: 1.4em;
 }
 
+/* for the p below the image only */
+
 #top-image-container p {
-    background: #b3dbe8;
-    color: #666;
-    text-align: center;
-    margin-top: 0;
-    padding-top: 10px;
+  background: #b3dbe8;
+  color: #666;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 10px;
 }
+
 
 /* images */
 
 #top-image-container {
-    background: #d4d4d4;
+  background: #d4d4d4;
 }
 
 img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
+
 
 /* links */
 
-a:link, a:visited, a:active {
-    color: #0287b3;
+a {
+  color: #0287b3;
 }
 
 a:hover {
-    color: #3ecbfa;
+  color: #3ecbfa;
 }
 
-aside a:link, aside a:visited, aside a:active {
-    color: #f0f002;
+aside a {
+  color: #f0f002;
 }
 
-aside a:focus, aside a:hover {
-    text-decoration: none;
-    color: #333;
-    background: #fafa7f;
+aside a:hover {
+  text-decoration: none;
+  color: #333;
+  background: #fafa7f;
 }
 
 /* special classes */
 
 .clearfix {
-    clear: both;
+  clear: both;
 }
 
-/* media queries */
+
+/* put your media queries below */
