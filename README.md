@@ -4,9 +4,11 @@ This repo contains your assignment starter files, including one image.
 
 1. **Fork** this repo (make sure you are logged into GitHub).
 
-2. **Clone** your new repo so you have it on your hard drive. Remember to save it into the folder where you are keeping all your projects for this course. Make sure you clone the repo with YOUR NAME on it.
+2. **Clone** your new repo so you have it on your hard drive. Remember to save it into the folder where you are keeping all your projects for this course. Make sure you clone the repo with YOUR NAME on it. Check the browser address bar and make sure YOUR NAME is in the URL.
 
-3. Use your GitHub app to create a **local branch** named *gh-pages*. Switch to that branch and do all your work in that branch. Note that the hyphen and all lowercase letters are essential in the branch name *gh-pages*.
+3. Use your GitHub app to create a **local branch** named *gh-pages*. Switch to that branch and do all your work in that branch. Note that the hyphen and all lowercase letters are essential in the branch name *gh-pages*. Stay in that branch, and do all your work in that branch.
+
+See the LAST 2 PAGES of [this illustrated guide](http://bit.ly/newGHapp) if you need a review of how to create the branch.
 
 ## Two goals
 
@@ -14,15 +16,25 @@ For this assignment, your focus is font families and responsive design.
 
 Your first goal is to build two very good, very correct font stacks, one for everything and the other only for headings. One stack will be serif, and the other will be sans-serif. You can choose whether headings are serif and everything else is sans-serif, or the opposite. **You must include one Google font in each stack.** The total number of different Google font families used will be two.
 
-Your second goal is to add appropriate and correct HTML and CSS to **make the page reformat itself for smaller devices,** especially mobile phones. This might take longer than the font families.
+Your second goal is to add appropriate and correct HTML and CSS to **make the page reformat itself for smaller devices,** especially mobile phones. This might take longer than the font families part.
 
 ## index.html
 
 Familiarize yourself with the file. You should understand all the HTML markup here. If you don't, ask!
 
-You will need to **add** exactly two elements to the HEAD. One element is part of making the page responsive. (What is that element? **Hint:** Check Robbins, chapter 18.) The other element is required for using Google fonts.
+You will need to **add** exactly two elements inside the `<head>`. One element is an important part of making the page responsive. (What is that element? **Hint:** Check Robbins, chapter 18.) The other element is required for using Google fonts.
 
-Other than adding those two elements, DO NOT *change* anything in this file!
+Other than adding those two elements to the `<head>`, DO NOT *change* anything in this file!
+
+## normalize.css
+
+It is well known that different browsers and different devices interpret some of the HTML elements differently. This wreaks havoc with our layouts. [Normalize.css](https://necolas.github.io/normalize.css/) is a commonly accepted, widely used solution to this vexing problem.
+
+I have already included the *normalize.css* file in your repo, and it is linked in the `<head>` of *index.html*.
+
+NEVER alter the *normalize.css* file. Keep it untouched. Write your styles in a separate file (here, that is *main.css*). When linking stylesheets in the `<head>`, always put *normalize.css* first and yours after it.
+
+This is all already done for you.
 
 ## main.css
 
