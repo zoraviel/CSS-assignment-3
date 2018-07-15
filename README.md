@@ -4,13 +4,13 @@ This repo contains your assignment starter files, including all images.
 
 1. **Fork** this repo (make sure you are logged into GitHub).
 
-2. **Clone** your new repo so you have it on your hard drive. Remember to save it into the folder where you are keeping all your projects for this course. Make sure you clone the repo from the GitHub page with YOUR NAME in the URL. Check the browser address bar and make sure you see YOUR NAME in the URL.
+2. **Clone** your new repo so you have it on your hard drive. Remember to save it into the folder where you are keeping all your projects for this course. Make sure you clone the repo from the GitHub page with YOUR NAME (not **macloo**) in the URL. Check the browser address bar and make sure you see YOUR NAME in the URL.
 
     <img src="screen_captures/clone_repo.png" alt="Clone from GitHub">
 
 3. Use your GitHub app to create a **local branch** named *gh-pages*. Switch to that branch and do all your work in that branch. Note that the hyphen and all lowercase letters are essential in the branch name *gh-pages*. Stay in that branch, and do all your work in that branch.
 
-See the LAST 2 PAGES of [this illustrated guide](http://bit.ly/newGHapp) if you need a review of how to create the *gh-pages* branch.
+Refer to [this illustrated guide](http://bit.ly/newGHapp) ("How to create a branch in the app") if you need a review of how to create the *gh-pages* branch.
 
 ## Goals of this assignment
 
@@ -20,9 +20,9 @@ See the LAST 2 PAGES of [this illustrated guide](http://bit.ly/newGHapp) if you 
 
 [Choosing Google fonts](https://www.youtube.com/watch?v=1S3ga5Or5ec): Another video.
 
-**Grid layout using grid areas:** Use CSS grid properties to layout the wide version of *index.html* to match [this first example](screen_captures/full-size-styled.png). There are instructions about this below.
+**Grid layout using grid areas:** Use CSS grid properties to layout the wide version of *index.html* to match [this first example](screen_captures/full-size-styled-sm.png). There are instructions about this below.
 
-**Responsive web design:** After you have solved the wide layout, write one media query in the same CSS file to style the small-screen version to match [this second example](screen_captures/phone-size-styled.png). There are instructions about this below.
+**Responsive web design:** After you have solved the wide layout, write one media query in the same CSS file to style the small-screen version to match [this second example](screen_captures/phone-size-styled-sm.png). There are instructions about this below.
 
 ## Files
 
@@ -72,9 +72,9 @@ You need to understand all the requirements of a **font stack** to do this assig
 
 ### Part 2: Grid layout using grid areas
 
-In the starter CSS and HTML, grid areas are already set up for you. The initial layout [looks like this](screen_captures/unstyled-original.png) &mdash; it is a 5-column, 2-row grid.
+In the starter CSS and HTML, grid areas are already set up for you. The initial layout [looks like this](screen_captures/unstyled-original-sm.png) &mdash; it is a 5-column, 2-row grid.
 
-Using grid areas, you will change the CSS so that the layout matches [this first example](screen_captures/full-size-styled.png).
+Using grid areas, you will change the CSS so that the layout matches [this first example](screen_captures/full-size-styled-sm.png).
 
 IMPORTANT: **Your fonts** will look different from those in the example.
 
@@ -82,7 +82,7 @@ IMPORTANT: **Your fonts** will look different from those in the example.
 
 **NOTE:** We do NOT use `grid-row-start` or `grid-column-start` when we use grid areas.
 
-1. Follow the screen capture shown in [the example](screen_captures/full-size-styled.png) to arrange all 10 grid items. Your first job is to get everything in the right position to match that image. You will CHANGE the number of rows and the number of columns in the starter CSS:
+1. Follow the screen capture shown in [the example](screen_captures/full-size-styled-sm.png) to arrange all 10 grid items. Your first job is to get everything in the right position to match that image. You will CHANGE the number of rows and the number of columns in the starter CSS:
 
     ```
     grid-template-columns: repeat(5, 1fr);
@@ -99,7 +99,7 @@ IMPORTANT: **Your fonts** will look different from those in the example.
         "readability line-length helvetica typeface footer";
     ```
 
-4. After you have the positions of all grid items (view in your browser and compare to [the example](screen_captures/full-size-styled.png)), you will need to adjust `padding` and (much more rarely) `margin` on various grid items to make them match the example. Do not let text crowd against the left or right edges of anything adjacent to the text.
+4. After you have the positions of all grid items (view in your browser and compare to [the example](screen_captures/full-size-styled-sm.png)), you will need to adjust `padding` and (much more rarely) `margin` on various grid items to make them match the example. Do not let text crowd against the left or right edges of anything adjacent to the text.
 
 5. You will also need to make changes to `font-size` for some grid items. In some cases, you will also need to specify `line-height`. It is understood that **your fonts** will look different from those in the example. Some grid items have larger text than others &mdash; that is what you're looking for and adjusting to match.
 
@@ -119,7 +119,7 @@ The video [CSS media queries and responsive web design](https://www.youtube.com/
 
 2. At the bottom of the CSS file, write a media query for `screen` with one *breakpoint* (see Robbins chapter 17 and the video). The breakpoint will indicate the width at which the page changes. Choosing a good number for this breakpoint is part of your assignment. DO NOT choose the width of a specific device. Use the **Chrome Developer Tools** to find a suitable breakpoint measured in pixels (`px`).
 
-3. In that media query, specify any changes that are needed to make the page look like the [small-screen example](screen_captures/phone-size-styled.png) (your fonts will be different). You will certainly change values for `grid-template-columns`, `grid-template-rows` and `grid-template-areas`.
+3. In that media query, specify any changes that are needed to make the page look like the [small-screen example](screen_captures/phone-size-styled-sm.png) (your fonts will be different). You will certainly change values for `grid-template-columns`, `grid-template-rows` and `grid-template-areas`.
 
 4. Changes must also be made to `padding` for most grid items.
 
