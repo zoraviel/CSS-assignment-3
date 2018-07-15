@@ -1,106 +1,133 @@
 # CSS Assignment 3 (Assignment 5)
 
-This repo contains your assignment starter files, including one image.
+This repo contains your assignment starter files, including all images.
 
 1. **Fork** this repo (make sure you are logged into GitHub).
 
-2. **Clone** your new repo so you have it on your hard drive. Remember to save it into the folder where you are keeping all your projects for this course. Make sure you clone the repo with YOUR NAME on it. Check the browser address bar and make sure YOUR NAME is in the URL.
+2. **Clone** your new repo so you have it on your hard drive. Remember to save it into the folder where you are keeping all your projects for this course. Make sure you clone the repo from the GitHub page with YOUR NAME in the URL. Check the browser address bar and make sure you see YOUR NAME in the URL.
 
 3. Use your GitHub app to create a **local branch** named *gh-pages*. Switch to that branch and do all your work in that branch. Note that the hyphen and all lowercase letters are essential in the branch name *gh-pages*. Stay in that branch, and do all your work in that branch.
 
-See the LAST 2 PAGES of [this illustrated guide](http://bit.ly/newGHapp) if you need a review of how to create the branch.
+See the LAST 2 PAGES of [this illustrated guide](http://bit.ly/newGHapp) if you need a review of how to create the *gh-pages* branch.
 
-## Two goals
+## Goals of this assignment
 
-For this assignment, your focus is font families and responsive design.
+**Font families:** Build two very good, very correct font stacks, one for everything and the other only for headings. One stack will be serif, and the other will be sans-serif. You can choose whether headings are serif and everything else is sans-serif, or the opposite. **You must include one Google font in EACH stack.** The total number of different Google font families used will be two (one Google font will be serif; the other Google font will be sans-serif).
 
-Your first goal is to build two very good, very correct font stacks, one for everything and the other only for headings. One stack will be serif, and the other will be sans-serif. You can choose whether headings are serif and everything else is sans-serif, or the opposite. **You must include one Google font in each stack.** The total number of different Google font families used will be two.
+[This video](https://www.youtube.com/watch?v=YaGPuatU1-o) shows how to build font stacks correctly.
 
-Your second goal is to add appropriate and correct HTML and CSS to **make the page reformat itself for smaller devices,** especially mobile phones. This might take longer than the font families part.
+[Choosing Google fonts](https://www.youtube.com/watch?v=1S3ga5Or5ec): Another video.
 
-## index.html
+**Grid layout using grid areas:** Use CSS grid properties to layout the wide version of *index.html* to match [this first example](screen_captures/full-size-styled.png). There are instructions about this below.
 
-Familiarize yourself with the file. You should understand all the HTML markup here. If you don't, ask!
+**Responsive web design:** After you have solved the wide layout, write one media query in the same CSS file to style the small-screen version to match [this second example](screen_captures/phone-size-styled.png). There are instructions about this below.
 
-You will need to **add** exactly two elements inside the `<head>`. One element is an important part of making the page responsive. (What is that element? **Hint:** Check Robbins, chapter 18.) The other element is required for using Google fonts.
+## Files
 
-Other than adding those two elements to the `<head>`, DO NOT *change* anything in this file!
+You will change only two files for this assignment.
 
-## normalize.css
+### index.html
 
-It is well known that different browsers and different devices interpret some of the HTML elements differently. This wreaks havoc with our layouts. [Normalize.css](https://necolas.github.io/normalize.css/) is a commonly accepted, widely used solution to this vexing problem.
+You will need to **add** exactly one element inside the `<head>`. This element is required for using Google fonts. See the [Choosing Google fonts](https://www.youtube.com/watch?v=1S3ga5Or5ec) video for guidance. The exact location of the added element is *important.*
 
-I have already included the *normalize.css* file in your repo, and it is linked in the `<head>` of *index.html*.
+Other than adding that one element to the `<head>`, DO NOT CHANGE ANYTHING in this file!
 
-NEVER alter the *normalize.css* file. Keep it untouched. Write your styles in a separate file (here, that is *main.css*). When linking stylesheets in the `<head>`, always put *normalize.css* first and yours after it.
-
-This is all already done for you.
-
-## main.css
+### css/main.css
 
 Familiarize yourself with the file. You should understand all the CSS rules here and what they do. If not, ask!
 
-You're not expected to change much in this file. There are two font-family declarations already in the file. **You will change *both* of those.** You will NOT add any new declarations for font-family.
+You will add many things to this CSS file. Do not change or delete any line that has a `/* keep */` comment at the end.
 
-You will **add** at least one @media query at the bottom of the CSS file. That will be necessary to make the page responsive.
-
-You must NOT change the page layout EXCEPT within an @media query.
+You will **add** one media query at the *bottom* of the CSS file. That will be necessary to make the page responsive.
 
 ## Instructions
 
 Remember to work only inside your *gh-pages* branch. You will edit the existing files *index.html* and *main.css*. Only those. Nothing else.
 
-### Part 1: Google fonts
+### Part 1: Font families and Google fonts
 
-Before you begin, be sure to read Robbins chapter 12 and watch the [Google Fonts video](https://www.youtube.com/watch?v=1S3ga5Or5ec&index=35&list=PLZFU-W6LLeecJuSQh20QUU_gCmS30sLTB). Also read all the text on the HTML page that's in this assignment.
+Before you begin, be sure to read Robbins chapter 12 and watch the video about [choosing Google fonts](https://www.youtube.com/watch?v=1S3ga5Or5ec).
 
-You need to understand all the requirements of a **font stack** to do this assignment correctly.
+You need to understand all the requirements of a **font stack** to do this assignment correctly. The order of fonts is important.
 
-**VERY IMPORTANT REQUIREMENT:** DO NOT use any Google font that is used in the [Google Fonts video](https://www.youtube.com/watch?v=1S3ga5Or5ec&index=35&list=PLZFU-W6LLeecJuSQh20QUU_gCmS30sLTB). Four Google fonts are used in the video. There will be a high penalty for using even one of those four fonts.
+**VERY IMPORTANT REQUIREMENT:** DO NOT use any Google font that is used in the [Google fonts](https://www.youtube.com/watch?v=1S3ga5Or5ec) video. Four Google fonts are used in the video. There will be a high penalty for using even one of those four fonts.
 
-1. Following the procedures shown in the video, choose two Google font families: one is for all the headings on the page, and the other is for everything else. Make sure they look good together but are not too similar to each other. Make sure the one used in paragraphs has good *readability* at that size. Either your headings are all serif fonts, and everything else is sans-serif, *or the opposite.* PAY ATTENTION to serif and sans-serif, and NEVER mix them together in a single CSS declaration.
+1. Following the procedures shown in the video, choose two Google font families: one is for all the headings on the page, and the other is for everything else. Make sure they both *look good together* and are *not too similar to each other.* Make sure the one used in paragraphs has good *readability* at a small size.
 
-2. Add the appropriate element to the HTML `<head>` element for your Google fonts.
+2. You may choose: (1) either your headings are all serif fonts, and everything else is sans-serif, or (2) *the opposite,* your headings are all sans-serif fonts, and everything else is serif. PAY ATTENTION to serif and sans-serif, and NEVER MIX them together in a single font stack.
 
-3. **Edit the two existing font-family declarations** in the CSS file to include your Google fonts.
+3. Add the appropriate element to the HTML `<head>` element for your Google fonts.
 
-4. Add *at least one* other common font family to each of those declarations, and make sure it is a suitable companion to the Google font you have named. Note that **you might need to add two,** because a common font on Windows is not always a common font on Mac, and vice versa. You will have to LOOK UP *common font families* — don't just guess. I'm taking off points if you make bad choices.
+4. **Edit the two existing font-family declarations** in the CSS file to include your Google fonts.
 
-5. Add the correct *generic* at the END of each declaration. Note: One must be serif, and one must be sans-serif. We NEVER use cursive or fantasy. Make sure you are choosing the best one to match the fonts preceding it in the declaration. Generics are covered in your book (page 229) and in the chapter 12, part 1 video.
+5. Add *at least one* other common font family to each of those declarations, and make sure it is a suitable companion to the Google font you have named. Note that **you might need to add two,** because a common font on Windows is not always a common font on Mac, and vice versa. You will have to LOOK UP *common font families* — don't just guess. You will lose points if you make bad choices. This is demonstrated in [the video about font stacks](https://www.youtube.com/watch?v=YaGPuatU1-o).
 
-**Test your page** for all the font options by deleting, saving and reloading — as many times as needed.
+6. Add the correct *generic* at the END of each declaration. Make sure you are choosing the best one to match the fonts preceding it in the declaration. Generics are covered in your book (chapter 12) and in the font stacks video.
 
-**TIP:** When you're selecting a font for the operating system you don't have, you can look it up on Wikipedia to see an image of how it looks. Not on Wikipedia? Then is it really a *common* font?
+**Test your page** for all the font options by deleting, saving and reloading &mdash; as many times as needed.
 
-### Part 2: Responsive design
+**TIP:** When you're selecting a font for the operating system you don't have (Mac or Windows), you can [look it up on Wikipedia](https://en.wikipedia.org/wiki/List_of_typefaces) to see an image of how it looks. Not on Wikipedia? Then is it really a *common* font?
 
-There are two ways to design a page initially. One is to design it for a wide screen, a desktop monitor, and then use @media queries to adapt it to mobile. The other way is to design for mobile first, and then use @media queries to adapt it to wider screens.
+### Part 2: Grid layout using grid areas
 
-This CSS file takes the first approach, even though "mobile first" is the preferred method nowadays. Therefore, your @media queries in this assignment must adapt the design to look good on small screens.
+In the starter CSS and HTML, grid areas are already set up for you. The initial layout [looks like this](screen_captures/unstyled-original.png) &mdash; it is a 5-column, 2-row grid.
 
-The [video for chapter 18](https://www.youtube.com/watch?v=DYrpZRaX8RI&index=37&list=PLZFU-W6LLeecJuSQh20QUU_gCmS30sLTB) is strongly recommended.
+Using grid areas, you will change the CSS so that the layout matches [this first example](screen_captures/full-size-styled.png).
 
-1. There is an element you must add to the `<head>` in the HTML file to make the page responsive. It doesn't do *everything* that's needed, but it plays an important part. It's in chapter 18 and in the video.
+IMPORTANT: **Your fonts** will look different from those in the example.
 
-2. Write an @media query with one *breakpoint* (see Robbins chapter 18 and the video). The breakpoint will indicate the width at which the page changes from two columns to one. Choosing a good number for this breakpoint is part of your assignment.
+*Grid areas* are covered in Robbins, pages 458-459 ("Defining grid areas") and 465-466 ("Positioning by area"). Using the area names, you can easily change the position of an item and the number of grid cells that it spans. I am requiring you to use grid areas in this assignment.
 
-3. In that @media query, specify any changes that are needed to make the page look like the animated image below on a phone (your fonts will be different). Changes must be made to margins and widths of several selectors.
+**NOTE:** We do NOT use `grid-row-start` or `grid-column-start` when we use grid areas.
 
-4. Also, because the chart at the top of the page becomes unreadable at a small size, you must hide it. **Hint:** Use the *display* property to hide something.
+1. Follow the screen capture shown in [the example](screen_captures/full-size-styled.png) to arrange all 10 grid items. Your first job is to get everything in the right position to match that image. You will CHANGE the number of rows and the number of columns in the starter CSS:
 
-![Animated GIF - phone preview - after responsive styles were added](video/phone.gif)
+    ```
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    ```
 
-(Yes, I made a video of my phone and then converted it to an animated GIF.)
+2. Do NOT use pixels (`px`) in the `grid-template-columns` or `grid-template-rows` values. Try to use only the grid `fr` unit or `auto`; you may use `%` if you find it easier.
 
-**Note:** In the CSS file, you must not *change* anything (except the two font-family declarations you already changed). You will *add* the @media query at the BOTTOM, and all adaptations will be handled there. (**Best practice:** Add @media queries at the bottom of the CSS file.)
+3. You will CHANGE the lines below `grid-template-areas:` to create your layout. Remember, any grid item may span more than one column and/or more than one row.
 
-In Chrome, you can test your page for different device sizes using the Developer Tools (View menu > Developer > Developer Tools). **YOU ARE supposed to use CHROME.**
+    ```
+    grid-template-areas:
+        "header arial georgia pairing bobwhite-quail"
+        "readability line-length helvetica typeface footer";
+    ```
 
-![Chrome Developer Tools - mobile testing](images/new-dev-tools-mobile.png)
+4. After you have the positions of all grid items (view in your browser and compare to [the example](screen_captures/full-size-styled.png)), you will need to adjust `padding` and (much more rarely) `margin` on various grid items to make them match the example. Do not let text crowd against the left or right edges of anything adjacent to the text.
 
-## Commit and publish/push
+5. You will also need to make changes to `font-size` for some grid items. In some cases, you will also need to specify `line-height`. It is understood that **your fonts** will look different from those in the example. Some grid items have larger text than others &mdash; that is what you're looking for and adjusting to match.
 
-When everything is finished, save both files, commit and publish (or push) to GitHub. Be sure to stay in your *gh-pages* branch for all steps. DO NOT forget to publish/push your repo after you have carefully checked your work!
+6. In the `typeface` grid item, you are expected to use `text-shadow` to make the appearance match the example. It is understood that **your fonts** will look different from those in the example.
+
+Before you begin Part 3, everything in the page should match the example when you view *index.html* in Chrome. It is understood that **your fonts** will look different from those in the example.
+
+### Part 3: Responsive web design
+
+There are two ways to design a page initially. One is to design it for a wide screen, a desktop monitor, and then use media queries to adapt it to small screens. The other way is to design for mobile (small) first, and then use media queries to adapt it to wider screens.
+
+This assignment requires you to take the first approach, even though "mobile first" is the preferred method nowadays. Therefore, your media query in this assignment must adapt the design to look good on small screens.
+
+The video [CSS media queries and responsive web design](https://www.youtube.com/watch?v=D2HW4_vl9zM) is strongly recommended. In the second half of the video, a grid example is demonstrated.
+
+1. The viewport `meta` element has already been added to the `<head>` in the HTML file.
+
+2. At the bottom of the CSS file, write a media query for `screen` with one *breakpoint* (see Robbins chapter 17 and the video). The breakpoint will indicate the width at which the page changes. Choosing a good number for this breakpoint is part of your assignment. DO NOT choose the width of a specific device. Use the **Chrome Developer Tools** to find a suitable breakpoint measured in pixels (`px`).
+
+3. In that media query, specify any changes that are needed to make the page look like the [small-screen example](screen_captures/phone-size-styled.png) (your fonts will be different). You will certainly change values for `grid-template-columns`, `grid-template-rows` and `grid-template-areas`.
+
+4. Changes must also be made to `padding` for most grid items.
+
+4. The graphic at the top of the page (in the `header`) becomes unreadable at a small size, so it makes sense to *hide it.*  **HINT:** Use the *display* property to hide something.
+
+In Chrome, you will test your page for different device sizes using the Developer Tools (View menu > Developer > Developer Tools). **YOU ARE supposed to use CHROME.**
+
+## Commit and push
+
+When everything is finished, save both files, commit and push (or publish) to GitHub. Be sure to stay in your *gh-pages* branch for all steps. DO NOT forget to publish/push your repo after you have carefully checked your work!
 
 ## Check the rubric and submit in Canvas
 
