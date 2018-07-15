@@ -24,11 +24,11 @@ All of the above. Plus:
 
 * In the *gh-pages* branch, the *main.css* has been changed as instructed under the heading "Part 2: Grid layout using grid areas" in the [README](README.md).
 
-* The main layout uses grid areas as instructed and looks reasonably similar to the [example](screen_captures/full-size-styled-sm.png).
+* The main layout uses grid areas as instructed and looks reasonably similar to the [wide-screen example](screen_captures/full-size-styled-sm.png).
 
 * One media query has been added at the bottom of *main.css* as instructed under the heading "Part 3: Responsive web design" in the [README](README.md).
 
-* The layout resulting from the media query uses grid areas as instructed and *at a narrow width* looks reasonably similar to the [example](screen_captures/phone-size-styled-sm.png).
+* The layout resulting from the media query uses grid areas as instructed and *at a narrow width* looks reasonably similar to the [small-screen example](screen_captures/phone-size-styled-sm.png).
 
 * Your CSS validates [here](https://jigsaw.w3.org/css-validator/).
 
