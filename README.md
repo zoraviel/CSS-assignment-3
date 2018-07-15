@@ -125,11 +125,15 @@ The video [CSS media queries and responsive web design](https://www.youtube.com/
 
 4. The graphic at the top of the page (in the `header`) becomes unreadable at a small size, so it makes sense to *hide it.*  **HINT:** Use the *display* property to hide something.
 
+5. There should be no need to change `font-size` or `line-height` for any grid item in the media query.
+
+6. **Do not include any lines in the media query that are not needed.** For example, you are not changing any background color. Therefore, no `background` property should appear anywhere in the media query.
+
 In Chrome, you will test your page for different device sizes using the Developer Tools (View menu > Developer > Developer Tools). **YOU ARE supposed to use CHROME.**
 
 ## Commit and push
 
-When everything is finished, save both files, commit and push (or publish) to GitHub. Be sure to stay in your *gh-pages* branch for all steps. DO NOT forget to publish/push your repo after you have carefully checked your work!
+When everything is finished, save both files, commit and push (or publish, the first time you publish the branch) to GitHub. Be sure to stay in your *gh-pages* branch for all steps. DO NOT forget to publish/push your repo after you have carefully checked your work!
 
 ## Check the rubric and submit in Canvas
 
