@@ -1,0 +1,107 @@
+/* Do not change any line marked -keep- */
+
+html {
+    font-size: 100%; /* keep */
+    box-sizing: border-box; /* keep */
+}
+* {
+    box-sizing: inherit; /* keep */
+}
+body {
+    font-family: sans-serif;
+    background: #5598b2; /* keep */
+    color: #333; /* keep */
+    margin: 0; /* keep */
+}
+h1, h2 {
+    font-family: serif;
+}
+#tagline {
+    font-style: italic;
+}
+/* all images will stretch to fill their containing element */
+img {
+    display: block; /* keep */
+    width: 100%; /* keep */
+}
+
+/* In the grid container below, you will change the columns,
+    the rows, and the AREAS to layout the page as instructed
+    in the assignment. After it matches the wide example, you will
+    write a media query with CSS rules to change the
+    layout to match the phone layout example.
+    */
+
+/* grid container */
+#container {
+    max-width: 1280px; /* keep */
+    margin: auto; /* keep */
+    display: grid; /* keep */
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "header arial georgia pairing bobwhite-quail"
+        "readability line-length helvetica typeface footer";
+}
+
+/* all grid items -
+    these are the 10 direct children of the container
+    - all the grid items are here already!
+    You may add lines as needed. Do not change any line marked -keep-
+    */
+
+header {
+    grid-area: header; /* keep */
+    background: #fff; /* keep */
+}
+#arial {
+    grid-area: arial; /* keep */
+    background: #a8e8ff; /* keep */
+}
+#georgia {
+    grid-area: georgia; /* keep */
+    background: #a8e8ff; /* keep */
+}
+#pairing {
+    grid-area: pairing; /* keep */
+    background: #a8e8ff; /* keep */
+}
+#bobwhite-quail {
+    grid-area: bobwhite-quail; /* keep */
+    background: #d2f4ff; /* keep */
+}
+#readability {
+    grid-area: readability; /* keep */
+    background: #d2f4ff; /* keep */
+}
+#line-length {
+    grid-area: line-length; /* keep */
+    background: #d2f4ff; /* keep */
+}
+#helvetica {
+    grid-area: helvetica; /* keep */
+    background: #fff; /* keep */
+}
+#typeface {
+    grid-area: typeface; /* keep */
+    color: #d2f4ff; /* keep */
+    background: #5598b2; /* keep */
+}
+footer {
+    grid-area: footer; /* keep */
+    background: #b2988a; /* keep */
+}
+
+/* end of all 10 grid items */
+
+
+/* pseudo classes */
+a {
+    color: #7c6a60; /* keep */
+}
+a:hover {
+    color: #f4cdb7; /* keep */
+    text-decoration: none; /* keep */
+}
+
+/* media queries below - only 1 is needed */
