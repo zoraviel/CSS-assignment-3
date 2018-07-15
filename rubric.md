@@ -1,18 +1,18 @@
-# RUBRIC for the Assignment
+# RUBRIC for Assignment 5
 
 15 points maximum
 
 ## 5 points:
 
-* Your correct and complete GitHub URL is submitted here by the deadline.
+* Your correct and complete GitHub URL is submitted in Canvas by the deadline.
 
 * Your repo contains the forked contents of the original repo PLUS a new branch named *gh-pages*.
 
-* In the *gh-pages* branch, the files *index.html* and *main.css* have been changed as instructed under the heading "Part 1: Google fonts" here:  https://github.com/macloo/CSS-assignment-3
+* In your *gh-pages* branch, the files *index.html* and *main.css* have been changed as instructed under the heading "Part 1: Font families and Google fonts" in the [README](README.md).
 
 * All directions ABOVE that heading on that page have also been followed.
 
-* NO changes have been made to *index.html* EXCEPT inside the `<head>` element.
+* NO changes have been made to *index.html* EXCEPT one inside the `<head>` element.
 
 * The correct additions for Google fonts have been made in the correct locations.
 
@@ -22,9 +22,13 @@
 
 All of the above. Plus:
 
-* In the *gh-pages* branch, the files *index.html* and *main.css* have been changed as instructed under the heading "Part 2: Responsive design" here:  https://github.com/macloo/CSS-assignment-3
+* In the *gh-pages* branch, the *main.css* has been changed as instructed under the heading "Part 2: Grid layout using grid areas" in the [README](README.md).
 
-* NO changes have been made to *main.css* EXCEPT as instructed.
+* The main layout uses grid areas as instructed and looks reasonably similar to the [example](screen_captures/full-size-styled-sm.png).
+
+* One media query has been added at the bottom of *main.css* as instructed under the heading "Part 3: Responsive web design" in the [README](README.md).
+
+* The layout resulting from the media query uses grid areas as instructed and *at a narrow width* looks reasonably similar to the [example](screen_captures/phone-size-styled-sm.png).
 
 * Your CSS validates [here](https://jigsaw.w3.org/css-validator/).
 
@@ -42,16 +46,16 @@ All of the above. Plus:
 
 3. When I gradually resize my browser to a narrow width:
 
-    * The two columns become one column BEFORE the two columns look too skinny and weird.
-    * The image disappears.
-    * There are no margins, and padding is not excessively large.
-    * There is no skinny stripe of another color at the top or bottom, or in between the elements.
+    * The layout changes BEFORE any text paragraphs look too skinny and weird.
+    * The top image (typography_line_terms.svg) disappears.
+    * The padding is not excessively large anywhere.
+    * There are no skinny stripes of a random color at the top or bottom, or in between the elements.
 
-4. When I use the Chrome Developer Tools, as specified in the assignment, your *index.html* at github.io looks like the animated GIF included in the assignment in terms of background colors, edges, and spacing. (Your fonts will be different.)
+4. When I use the Chrome Developer Tools, and "Toggle Device Toolbar," and choose "iPhone 6/7/8," your *index.html* at github.io looks like the [small-screen example](screen_captures/phone-size-styled-sm.png). (Your fonts will be different, of course.)
 
-5. Your @media query does not contain unnecessary selectors, rules or properties.
+5. Your media query does not contain unnecessary selectors, rules or properties.
 
-6. Your @media query uses a suitable breakpoint number.
+6. Your media query uses a suitable breakpoint number.
 
 7. The CSS and HTML are formatted neatly, with sensible indents and use of linespaces that make code easy to read.
 
@@ -59,4 +63,4 @@ All of the above. Plus:
 
 ## DISHONESTY
 
-Showing your code to any other student, or giving another student code to solve the problem, or any part of the problem, is a violation of the university's honor code. Asking for a solution in any online forum is a violation of the university's honor code. Copying code from another student, past or present, is a violation of the university's honor code. Allowing anyone else to write code for you is a violation of the university's honor code. You must do your own work, or risk a failing grade for the entire course. Penalties for academic dishonesty are spelled out in the syllabus for this course.
+Showing your code to any other student, or giving another student code to solve the problem, or any part of the problem, is a violation of the university's honor code. Asking for a solution in any online forum is a violation of the university's honor code. Copying code from another student, past or present, is a violation of the university's honor code. Allowing anyone else to write code for you is a violation of the university's honor code. You must do your own work, or **risk a failing grade for the entire course.** Penalties for academic dishonesty are spelled out in the syllabus for this course.
