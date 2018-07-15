@@ -2,80 +2,86 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title> CSS Assignment 3 - Course Assignment 5 </title>
-	<!-- when you include normalize.css, it MUST be the FIRST stylesheet -->
-	<link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" href="styles/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> CSS Assignment 3: Fonts, Grid, Responsive Design </title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-	<div id="top-image-container">
-		<img src="images/typography-1280x350.jpg" alt="Chart: Typography terms">
-		<p>Image source: <a href="http://www.better2web.com/blog/details/12/free-typography-diagram-wallpaper">better2web</a></p>
-	</div>
-
+<!-- this is your grid container -->
 <div id="container">
 
-<!-- begin main article -->
+<header>
+	<h1>Learning About Web Typography</h1>
 
-<article>
+	<p id="tagline">“You don’t have absolute control.” &mdash;Jennifer Niederst Robbins</p>
 
-<h1>Typography</h1>
+	<img src="images/typography_line_terms.svg" alt="Diagram showing typography terms">
+</header>
 
-<p><em>Readability</em> is primarily the concern of the typographer or information designer. It is the intended result of the complete process of presentation of textual material in order to communicate meaning as unambiguously as possible. A reader should be assisted in navigating through the information with ease, by optimal inter-letter, inter-word, and particularly, inter-line spacing, coupled with <a href="http://baymard.com/blog/line-length-readability">appropriate line length</a> and position on the page, careful editorial “chunking,” and choice of the text architecture of titles, folios, and reference links. Case, whether capital or lowercase, may be pivotal, given the loss of legibility with the use of all caps. However, frequent use of the all-caps style implies that many designers are unaware of the issue.</p>
+<div id="arial">
+	<img src="images/ArialMTsp.svg" alt="Arial typeface">
+	<p>Image source: <a href="https://commons.wikimedia.org/wiki/File:ArialMTsp.svg">Wikimedia Commons</a> (public domain)</p>
+</div>
 
-<h2>Characteristics of readability</h2>
+<div id="georgia">
+	<img src="images/GeorgiaSpecimenAIB.svg" alt="Georgia typeface">
+	<p>Image source: <a href="https://commons.wikimedia.org/wiki/File:GeorgiaSpecimenAIB.svg">Wikimedia Commons</a> (public domain)</p>
+</div>
 
-<p>Readability also may be compromised by letter-spacing, word spacing, or <a href="https://en.wikipedia.org/wiki/Leading">leading</a> that is too tight or too loose. It may be improved when generous vertical space separates lines of text, making it easier for the eye to distinguish one line from the next or previous line. Poorly designed typefaces and those that are too tightly or loosely fitted also may result in poor legibility. Underlining also may reduce readability by eliminating the recognition effect contributed by the descending elements of letters.</p>
+<p id="pairing">“By far the most popular principle for creating typeface combinations is to pair a sans-serif header typeface with a serif body typeface. This is a classic combination, and it’s almost impossible to get wrong.” (Source: <a href="https://www.smashingmagazine.com/2010/11/best-practices-of-combining-typefaces/">Smashing Magazine</a>)</p>
 
-<h2>Purpose of a style guide</h2>
+<div id="bobwhite-quail">
+	<img src="images/Georgia_Times_compar.svg" alt="Comparison of Georgia and Times typefaces">
+	<p>Image by GearedBull at English Wikipedia (transferred from en.wikipedia to Commons). Public domain. Source: <a href="https://commons.wikimedia.org/wiki/File:GeorgiatTmes.svg">Wikimedia Commons</a></p>
+</div>
 
-<p>By formulating a <a href="https://en.wikipedia.org/wiki/Style_guide">style guide</a>, a publication (or website) standardizes with a relatively small collection of typefaces, each used for specific elements within the publication, and makes consistent use of typefaces, case, type sizes, italic, boldface, colors, and other typographic features such as combining large and small capital letters together. Some publications, such as <cite>The Guardian</cite> and <cite>The Economist</cite>, go so far as to commission a type designer to create customized typefaces for their exclusive use. Different periodical publications design their publications, including their typography, to achieve a particular tone or style.</p>
+<section id="readability">
 
-<p>Source: <a href="https://en.wikipedia.org/wiki/Typography">Wikipedia</a></p>
+	<h2>Readability</h2>
 
-<p><em>This page belongs to a class assignment in the course <a href="https://introwebapps.wordpress.com/">Intro to Web Apps</a>.</em></p>
+	<p>“Just because something is legible doesn’t mean it’s readable. <em>Legibility</em> means that text can be interpreted, but that’s like saying tree bark is edible. We’re aiming higher. <em>Readability</em> combines the emotional impact of a design (or lack thereof ) with the amount of effort it presumably takes to read. ... To paraphrase Stephen Coles, the term readability doesn’t ask simply, ‘Can you read it?’ but ‘Do you want to read it?’&thinsp;” (Source: <a href="http://alistapart.com/article/how-we-read">A List Apart</a>)</p>
 
-</article>
+</section>
 
-<!-- end main and begin sidebar 1 -->
+<section id="line-length">
 
-<aside>
+	<h2>Optimal Line Length</h2>
 
-<h2>Typeface</h2>
+	<p>“Having the right amount of characters on each line is key to the readability of your text. It shouldn’t merely be your design that dictates the width of your text; it should also be a matter of legibility.</p>
 
-<p>In typography, a typeface (also known as <em>font family</em>) is a set of one or more fonts each composed of glyphs that share common design features. Each font of a typeface has a specific weight, style, condensation, width, slant, italicization, ornamentation, and designer or foundry (and formerly size, in metal fonts).</p>
+	<p>“The optimal line length for your body text is considered to be 50 to 60 characters per line, including spaces (<cite>Typographie</cite>, Emil Ruder). Other sources suggest that up to 75 characters is acceptable. If a line of text is too long, the reader’s eyes will have a hard time focusing on the text. If a line is too short, the eye will have to travel back too often, breaking the reader’s rhythm.” (Source: <a href="https://baymard.com/blog/line-length-readability">Baymard Institute</a>)</p>
 
-<p>In professional typography, the term <em>typeface</em> is not interchangeable with the word <em>font</em> (originally “fount” in British English, and pronounced “font”), because the term font has historically been defined as a given alphabet and its associated characters in a single size. For example, 8-point Caslon Italic was one font, and 10-point Caslon Italic was another. Historically, fonts came in specific sizes determining the size of characters, and in quantities of sorts or number of each letter provided. The design of characters in a font took into account all these factors.</p>
+</section>
 
-<p>Source: <a href="https://en.wikipedia.org/wiki/Typeface">Wikipedia</a></p>
+<div id="helvetica">
+<img src="images/Helvetica_Neue_typeface_weights.svg" alt="Helvetica Neue typeface weights">
+<p>Image by Vectorised by Froztbyte. Public domain. Source: <a href="https://commons.wikimedia.org/wiki/File:Helvetica_Neue_typeface_weights.svg">Wikimedia Commons</a></p>
+</div>
 
-</aside>
+<section id="typeface">
 
-<!-- end sidebar 1 and begin sidebar 2 -->
+	<h2>Typeface</h2>
 
-<aside id="sidebar2">
+	<p>In typography, a <em>typeface</em> (also known as <em>font family</em>) is a set of one or more fonts each composed of glyphs that share common design features. Each font of a typeface has a specific weight, style, condensation, width, slant, italicization, ornamentation, and designer or foundry (and formerly size, in metal fonts).</p>
 
-<h2>Methods for Pairing</h2>
+	<p>In professional typography, the term <em>typeface</em> is not interchangeable with the word <em>font</em> (originally “fount” in British English, and pronounced “font”), because the term font has historically been defined as a given alphabet and its associated characters in a single size. For example, 8-point Caslon Italic was one font, and 10-point Caslon Italic was another. Historically, fonts came in specific sizes determining the size of characters, and in quantities of sorts or number of each letter provided. The design of characters in a font took into account all these factors.</p>
 
-<p>“One or two typefaces are enough for most designs. When in doubt, a good rule of thumb is to pair a serif and a sans serif. This provides you with what are likely the two most flexible kinds of typefaces, and nearly guarantees you have sufficient variation between the two as they’re inherently different. Obviously, this method doesn’t ensure a good pairing, but it should help you avoid a bad one.</p>
+	<p>As the range of typeface designs increased and requirements of publishers broadened over the centuries, fonts of specific weight (blackness or lightness) and stylistic variants (most commonly <em>regular</em> or <em>roman</em> as distinct to <em>italic,</em> as well as <em>condensed</em>) have led to <strong>font families,</strong> collections of closely related typeface designs that can include hundreds of styles.</p>
 
-<p>“When it comes to choosing and pairing typefaces, I keep two things in mind: <strong>distinction</strong> and <strong>harmony.</strong> To keep the system you’ve created for visual communication properly balanced, you need to choose typefaces that don’t compete too much with each other, but aren’t so similar as to be indistinguishable. ...</p>
+	<p>A font family is typically a group of related fonts which vary only in weight, orientation, width, etc., but not design. For example, Times is a font family, whereas Times Roman, Times Italic and Times Bold are individual fonts making up the Times family. Font families typically include several fonts, though some, such as Helvetica, may consist of dozens of fonts.</p>
 
-<p>“Creating <strong>distinction</strong> can be as simple as pairing typefaces with strong visual differences ...</p>
+	<p>Source: <a href="https://en.wikipedia.org/wiki/Typeface">Wikipedia</a></p>
 
-<p>“A good way to build a foundation for <strong>harmony</strong> is by finding typefaces with inherent visual relationships in their structure. ... For instance, many typefaces have similar skeletons or strong geometrical foundations based on circles and rectangles. Find two typefaces that share similar shapes, like Helvetica and Bodoni, and pair them together.”</p>
+</section>
 
-<p>Source: Chapter 4, “<a href="https://abookapart.com/products/on-web-typography">Choosing and Pairing Typefaces</a>,” in <cite>On Web Typography</cite>, by Jason Santa Maria</p>
+<footer>
+	<p>This page is an assignment for a University of Florida course: JOU 3363 Introduction to Web Apps</p>
+</footer>
 
-</aside>
-<!-- end sidebar 2 -->
-
-<!-- the div below clears all floats above -->
-<div class="clearfix"></div>
-
-</div> <!-- end of #container -->
+<!-- the grid container ends here -->
+</div>
 
 </body>
 </html>
