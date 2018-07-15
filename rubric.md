@@ -50,6 +50,7 @@ All of the above. Plus:
     * The top image (typography_line_terms.svg) disappears.
     * The padding is not excessively large anywhere.
     * There are no skinny stripes of a random color at the top or bottom, or in between the elements.
+    * Text does not touch the left or right edge of the window at any width.
 
 4. When I use the Chrome Developer Tools, and "Toggle Device Toolbar," and choose "iPhone 6/7/8," your *index.html* at github.io looks like the [small-screen example](screen_captures/phone-size-styled-sm.png). (Your fonts will be different, of course.)
 
