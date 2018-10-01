@@ -127,15 +127,15 @@ The video [CSS media queries and responsive web design](https://www.youtube.com/
 
 3. In that media query, specify any changes that are needed to make the page look like the [small-screen example](screen_captures/phone-size-styled-sm.png) (your fonts will be different). You will certainly change values for `grid-template-columns`, `grid-template-rows` and `grid-template-areas`.
 
-4. Changes must also be made to `padding` for most grid items.
+4. Changes must also be made in the media query to `padding` for most grid items.
 
-4. The graphic at the top of the page (in the `header`) becomes unreadable at a small size, so it makes sense to *hide it.*  **HINT:** Use the *display* property to hide something.
+4. The graphic at the top of the page (in the `header`) becomes unreadable at a small size, so it makes sense to *hide it.*  **HINT:** Use the *display* property to hide something. Look it up.
 
 5. There should be no need to change `font-size` or `line-height` for any grid item in the media query.
 
 6. **Do not include any lines in the media query that are not needed.** For example, you are not changing any background color. Therefore, no `background` property should appear anywhere in the media query.
 
-In Chrome, you will test your page for different device sizes using the Developer Tools (View menu > Developer > Developer Tools). **YOU ARE supposed to use CHROME.**
+In Chrome, you will test your page for different device sizes using the Developer Tools (View menu > Developer > Developer Tools). **YOU ARE supposed to use CHROME.** At 1:25 in [this 4-minute video](https://www.youtube.com/watch?v=MLhfzhrzfvo), you will see exactly how to test for device sizes.
 
 ## Commit and push
 
