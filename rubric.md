@@ -1,5 +1,7 @@
 # RUBRIC for Assignment 5
 
+Note: You can check your live page at **https://[yourname].github.io/CSS-assignment-3/**
+
 15 points maximum
 
 ## 5 points:
