@@ -8,11 +8,13 @@ This repo contains your assignment starter files, including all images.
 
     <img src="screen_captures/clone_repo.png" alt="Clone from GitHub">
 
-3. Use your GitHub app to create a **local branch** named *gh-pages*. Switch to that branch and do all your work in that branch. Note that the hyphen and all lowercase letters are essential in the branch name *gh-pages*. Stay in that branch, and do all your work in that branch.
+3. WATCH where you are putting the cloned repo as you save from GitHub!
+
+4. Use your GitHub app to create a **local branch** named *gh-pages*. Switch to that branch and do all your work in that branch. Note that the hyphen and all lowercase letters are essential in the branch name *gh-pages*. Stay in that branch, and do all your work in that branch.
 
 Refer to [this illustrated guide](http://bit.ly/newGHapp) ("How to create a branch in the app") if you need a review of how to create the *gh-pages* branch.
 
-## Goals of this assignment
+## Goals of this assignment (overview)
 
 **Font families:** Build two very good, very correct font stacks, one for everything and the other only for headings. One stack will be serif, and the other will be sans-serif. You can choose whether headings are serif and everything else is sans-serif, or the opposite. **You must include one Google font in EACH stack.** The total number of different Google font families used will be two (one Google font will be serif; the other Google font will be sans-serif).
 
@@ -46,6 +48,8 @@ You will **add** one media query at the *bottom* of the CSS file. That will be n
 
 Remember to work only inside your *gh-pages* branch. You will edit the existing files *index.html* and *main.css*. Only those. Nothing else.
 
+Please follow the steps IN ORDER, and do one part at a time.
+
 ### Part 1: Font families and Google fonts
 
 Before you begin, be sure to read Robbins chapter 12 and watch the video about [choosing Google fonts](https://www.youtube.com/watch?v=1S3ga5Or5ec).
@@ -78,7 +82,9 @@ Using grid areas, you will change the CSS so that the layout matches [this first
 
 IMPORTANT: **Your fonts** will look different from those in the example.
 
-*Grid areas* are covered in Robbins, pages 458-459 ("Defining grid areas") and 465-466 ("Positioning by area"). Using the area names, you can easily change the position of an item and the number of grid cells that it spans. I am requiring you to use grid areas in this assignment.
+*Grid areas* are covered in Robbins, pages 458-459 ("Defining grid areas") and 465-466 ("Positioning by area"). Using the area names, you can easily change the position of an item and the number of grid cells that it spans.
+
+**I am requiring you to use grid areas in this assignment.**
 
 **NOTE:** We do NOT use `grid-row-start` or `grid-column-start` when we use grid areas.
 
@@ -89,7 +95,7 @@ IMPORTANT: **Your fonts** will look different from those in the example.
     grid-template-rows: repeat(2, auto);
     ```
 
-2. Do NOT use pixels (`px`) in the `grid-template-columns` or `grid-template-rows` values. Try to use only the grid `fr` unit or `auto`; you may use `%` if you find it easier.
+2. Do NOT use pixels (`px`) in the `grid-template-columns` or `grid-template-rows` values. Try to use only the grid `fr` unit or `auto`; you may use `%` if you find it easier, but I think `fr` will be better.
 
 3. You will CHANGE the lines below `grid-template-areas:` to create your layout. Remember, any grid item may span more than one column and/or more than one row.
 
@@ -111,13 +117,13 @@ Before you begin Part 3, everything in the page should match the example when yo
 
 There are two ways to design a page initially. One is to design it for a wide screen, a desktop monitor, and then use media queries to adapt it to small screens. The other way is to design for mobile (small) first, and then use media queries to adapt it to wider screens.
 
-This assignment requires you to take the first approach, even though "mobile first" is the preferred method nowadays. Therefore, your media query in this assignment must adapt the design to look good on small screens.
+This assignment requires you to take the first approach, even though "mobile first" is the preferred method nowadays. Therefore, your media query in this assignment must adapt the design to look good on small screens. **The reason** is that I think the first part (wide screen design) will be harder for you, so do the hard part first, and the easy part second.
 
-The video [CSS media queries and responsive web design](https://www.youtube.com/watch?v=D2HW4_vl9zM) is strongly recommended. In the second half of the video, a grid example is demonstrated.
+The video [CSS media queries and responsive web design](https://www.youtube.com/watch?v=D2HW4_vl9zM) is strongly recommended. In the second half of the video, a grid example is demonstrated. **NOTE:** The first part of the video helps explain how to write a media query. The later part of the video is exactly about grid.
 
 1. The viewport `meta` element has already been added to the `<head>` in the HTML file.
 
-2. At the bottom of the CSS file, write a media query for `screen` with one *breakpoint* (see Robbins chapter 17 and the video). The breakpoint will indicate the width at which the page changes. Choosing a good number for this breakpoint is part of your assignment. DO NOT choose the width of a specific device. Use the **Chrome Developer Tools** to find a suitable breakpoint measured in pixels (`px`).
+2. At the bottom of the CSS file, write a media query for `screen` with one *breakpoint* (see Robbins chapter 17 and the video). The breakpoint will indicate the width at which the page changes. Choosing a good number for this breakpoint is part of your assignment. DO NOT choose the width of a specific device. Use the **Chrome Developer Tools** to find a suitable breakpoint measured in pixels (`px`). [This 4-minute video](https://www.youtube.com/watch?v=MLhfzhrzfvo) demonstrates exactly how to do that.
 
 3. In that media query, specify any changes that are needed to make the page look like the [small-screen example](screen_captures/phone-size-styled-sm.png) (your fonts will be different). You will certainly change values for `grid-template-columns`, `grid-template-rows` and `grid-template-areas`.
 
