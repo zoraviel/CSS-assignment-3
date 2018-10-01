@@ -144,3 +144,9 @@ When everything is finished, save both files, commit and push (or publish, the f
 ## Check the rubric and submit in Canvas
 
 Be sure to [check the rubric](rubric.md) and **SUBMIT THE URL of your GitHub repo** in Canvas to complete this assignment.
+
+Note that the rubric covers *each one* of the three sections in these instructions:
+
+* Part 1: Font families and Google fonts
+* Part 2: Grid layout using grid areas
+* Part 3: Responsive web design
