@@ -36,6 +36,9 @@ All of the above. Plus:
 
 * Your HTML validates [here](https://html5.validator.nu/).
 
+This *one* HTML validation error is OKAY:
+<img src="screen_captures/validation_error.png" alt="Validation error for Google fonts">
+
 (All criteria must be met to get 10 points.)
 
 ## 15 points:
