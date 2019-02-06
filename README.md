@@ -2,25 +2,23 @@
 
 This repo contains your assignment starter files, including all images.
 
-1. **Fork** this repo (make sure you are logged into GitHub).
+1. **Fork** this repo (make sure you are logged into GitHub). How to: [Forking and Cloning with GitHub](https://github.com/macloo/github-howto-and-github-desktop/tree/master/forking_and_cloning)
 
-2. **Clone** your new repo so you have it on your hard drive. Remember to save it into the folder where you are keeping all your projects for this course. Make sure you clone the repo from the GitHub page with YOUR NAME (not **macloo**) in the URL. Check the browser address bar and make sure you see YOUR NAME in the URL.
+2. **Clone** your new repo so you have it on your hard drive (see previous link). Remember to save it into the folder where you are keeping all your projects for this course. Make sure you clone the repo from the GitHub page with YOUR NAME (not the name **macloo**) *in the URL.* Check the browser address bar and make sure you see **YOUR NAME** in the URL.
 
     <img src="screen_captures/clone_repo.png" alt="Clone from GitHub">
 
 3. WATCH where you are putting the cloned repo as you save from GitHub!
 
-4. Use your GitHub app to create a **local branch** named *gh-pages*. Switch to that branch and do all your work in that branch. Note that the hyphen and all lowercase letters are essential in the branch name *gh-pages*. Stay in that branch, and do all your work in that branch.
-
-Refer to [this illustrated guide](http://bit.ly/newGHapp) ("How to create a branch in the app") if you need a review of how to create the *gh-pages* branch.
+4. Use your GitHub app to create a **local branch** named *gh-pages*. Switch to that branch and do all your work in that branch. Note that the hyphen and all lowercase letters are **essential** in the branch name *gh-pages*. Stay in that branch, and do all your work in that branch. How to: [Git Branches](https://github.com/macloo/github-howto-and-github-desktop/tree/master/git_branches)
 
 ## Goals of this assignment (overview)
 
 **Font families:** Build two very good, very correct font stacks, one for everything and the other only for headings. One stack will be serif, and the other will be sans-serif. You can choose whether headings are serif and everything else is sans-serif, or the opposite. **You must include one Google font in EACH stack.** The total number of different Google font families used will be two (one Google font will be serif; the other Google font will be sans-serif).
 
-[This video](https://www.youtube.com/watch?v=YaGPuatU1-o) shows how to build font stacks correctly.
+[This video](https://www.youtube.com/watch?v=YaGPuatU1-o) shows how to build **font stacks** correctly.
 
-[Choosing Google fonts](https://www.youtube.com/watch?v=1S3ga5Or5ec): Another video.
+[Choosing Google fonts](https://www.youtube.com/watch?v=1S3ga5Or5ec): A different video how-to.
 
 **Grid layout using grid areas:** Use CSS grid properties to layout the wide version of *index.html* to match [this first example](screen_captures/full-size-styled-sm.png). There are instructions about this below.
 
@@ -32,7 +30,7 @@ You will change only two files for this assignment.
 
 ### index.html
 
-You will need to **add** exactly one element inside the `<head>`. This element is required for using Google fonts. See the [Choosing Google fonts](https://www.youtube.com/watch?v=1S3ga5Or5ec) video for guidance. The exact location of the added element is *important.*
+You will need to **add** exactly one element inside the `<head>`. This element is required for using Google fonts. See the [Choosing Google fonts](https://www.youtube.com/watch?v=1S3ga5Or5ec) video for guidance. The exact location of the added element is *important* &mdash; where is it in relation to the LINK element for your own stylesheet?
 
 Other than adding that one element to the `<head>`, DO NOT CHANGE ANYTHING in this file!
 
@@ -40,7 +38,7 @@ Other than adding that one element to the `<head>`, DO NOT CHANGE ANYTHING in th
 
 Familiarize yourself with the file. You should understand all the CSS rules here and what they do. If not, ask!
 
-You will add many things to this CSS file. Do not change or delete any line that has a `/* keep */` comment at the end.
+**You will add many things to this CSS file.** Do not change or delete any line that has a `/* keep */` comment at the end.
 
 You will **add** one media query at the *bottom* of the CSS file. That will be necessary to make the page responsive.
 
@@ -73,6 +71,8 @@ You need to understand all the requirements of a **font stack** to do this assig
 **Test your page** for all the font options by deleting, saving and reloading &mdash; as many times as needed.
 
 **TIP:** When you're selecting a font for the operating system you don't have (Mac or Windows), you can [look it up on Wikipedia](https://en.wikipedia.org/wiki/List_of_typefaces) to see an image of how it looks. Not on Wikipedia? Then is it really a *common* font?
+
+CREATING THESE FONT STACKS CORRECTLY IS IMPORTANT TO YOUR GRADE FOR THIS ASSIGNMENT.
 
 ### Part 2: Grid layout using grid areas
 
@@ -125,7 +125,7 @@ The video [CSS media queries and responsive web design](https://www.youtube.com/
 
 2. At the bottom of the CSS file, write a media query for `screen` with one *breakpoint* (see Robbins chapter 17 and the video). The breakpoint will indicate the width at which the page changes. Choosing a good number for this breakpoint is part of your assignment. DO NOT choose the width of a specific device. Use the **Chrome Developer Tools** to find a suitable breakpoint measured in pixels (`px`). [This 4-minute video](https://www.youtube.com/watch?v=MLhfzhrzfvo) demonstrates exactly how to do that.
 
-3. In that media query, specify any changes that are needed to make the page look like the [small-screen example](screen_captures/phone-size-styled-sm.png) (your fonts will be different). You will certainly change values for `grid-template-columns`, `grid-template-rows` and `grid-template-areas`. To grade this, we will view your page in Chrome with Device Mode set to iPhone 6/7/8. 
+3. In that media query, specify any changes that are needed to make the page look like the [small-screen example](screen_captures/phone-size-styled-sm.png) (your fonts will be different). You will certainly change values for `grid-template-columns`, `grid-template-rows` and `grid-template-areas`. To grade this, we will view your page in Chrome with Device Mode set to iPhone 6/7/8.
 
 4. Changes must also be made in the media query to `padding` for most grid items.
 
@@ -139,7 +139,7 @@ In Chrome, you will test your page for different device sizes using the Develope
 
 ## Commit and push
 
-When everything is finished, save both files, commit and push (or publish, the first time you publish the branch) to GitHub. Be sure to stay in your *gh-pages* branch for all steps. DO NOT forget to publish/push your repo after you have carefully checked your work!
+When everything is finished, save both files, commit and push (or publish, the first time you publish the branch) to GitHub. Be sure to stay in your *gh-pages* branch for all steps. DO NOT forget to publish/push your repo after you have carefully checked your work! How-to: [Publish or Push: Git Commit and Sync](https://github.com/macloo/github-howto-and-github-desktop/tree/master/git_commit_and_sync)
 
 ## Check the rubric and submit in Canvas
 
