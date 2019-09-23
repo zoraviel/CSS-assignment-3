@@ -6,7 +6,7 @@ This repo contains your assignment starter files, including all images.
 
 2. **Clone** your new repo so you have it on your hard drive (see previous link). Remember to save it into the folder where you are keeping all your projects for this course. Make sure you clone the repo from the GitHub page with YOUR NAME (not the name **macloo**) *in the URL.* Check the browser address bar and make sure you see **YOUR NAME** in the URL.
 
-    <img src="screen_captures/clone_repo.png" alt="Clone from GitHub">
+    <img src="screen_captures/clone_repo.png" alt="Clone from GitHub" width="415">
 
 3. WATCH where you are putting the cloned repo as you save from GitHub!
 
