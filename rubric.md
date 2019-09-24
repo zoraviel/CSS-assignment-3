@@ -26,15 +26,15 @@ All of the above. Plus:
 
 * In the *gh-pages* branch, the *main.css* has been changed as instructed under the heading "Part 2: Grid layout using grid areas" in the [README](README.md).
 
-* The main layout uses grid areas as instructed and looks reasonably similar to the [wide-screen example](screen_captures/full-size-styled-sm.png).
+* The main layout uses grid areas as instructed and looks reasonably similar to the [wide-screen example](https://raw.githubusercontent.com/macloo/CSS-assignment-3/master/screen_captures/full-size-styled-sm.png).
 
 * One media query has been added at the bottom of *main.css* as instructed under the heading "Part 3: Responsive web design" in the [README](README.md).
 
-* The layout resulting from the media query uses grid areas as instructed and *at a narrow width* looks reasonably similar to the [small-screen example](screen_captures/phone-size-styled-sm.png).
+* The layout resulting from the media query uses grid areas as instructed and *at a narrow width* looks reasonably similar to the [small-screen example](https://raw.githubusercontent.com/macloo/CSS-assignment-3/master/screen_captures/phone-size-styled-sm.png).
 
 * Your CSS validates [here](https://jigsaw.w3.org/css-validator/).
 
-* Your HTML validates [here](https://html5.validator.nu/).
+* Your HTML validates [here](https://validator.w3.org/).
 
 This *one* HTML validation error is OKAY:
 <img src="screen_captures/validation_error.png" alt="Validation error for Google fonts">
@@ -57,7 +57,7 @@ All of the above. Plus:
     * There are no skinny stripes of a random color at the top or bottom, or in between the elements.
     * Text does not touch the left or right edge of the window at any width.
 
-4. When I use the Chrome Developer Tools, and "Toggle Device Toolbar," and choose "iPhone 6/7/8," your *index.html* at github.io looks like the [small-screen example](screen_captures/phone-size-styled-sm.png). (Your fonts will be different, of course.)
+4. When I use the Chrome Developer Tools, and "Toggle Device Toolbar," and choose "iPhone 6/7/8," your *index.html* at github.io looks like the [small-screen example](https://raw.githubusercontent.com/macloo/CSS-assignment-3/master/screen_captures/phone-size-styled-sm.png). (Your fonts will be different, of course.)
 
 5. Your media query does not contain unnecessary selectors, rules or properties.
 
