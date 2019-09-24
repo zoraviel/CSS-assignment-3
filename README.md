@@ -105,6 +105,8 @@ IMPORTANT: **Your fonts** will look different from those in the example.
         "readability line-length helvetica typeface footer";
     ```
 
+    The IDs for all those area-names are *already* in the HTML (*index.html*).
+
 4. After you have the positions of all grid items (view in your browser and compare to [the example](https://raw.githubusercontent.com/macloo/CSS-assignment-3/master/screen_captures/full-size-styled-sm.png)), you will need to adjust `padding` and (much more rarely) `margin` on various grid items to make them match the example. Do not let text crowd against the left or right edges of anything adjacent to the text.
 
 5. You will also need to make changes to `font-size` for some grid items. In some cases, you will also need to specify `line-height`. It is understood that **your fonts** will look different from those in the example. Some grid items have larger text than others &mdash; that is what you're looking for and adjusting to match.
